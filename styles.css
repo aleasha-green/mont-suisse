@@ -61,7 +61,6 @@ body {
   font-size: 16px;
   font-family: var(--fonts);
   color: var(--dk-gray);
-  text-align: center;
   font-weight: 500;
   background-color: var(--md-gray);
 }
@@ -132,7 +131,12 @@ h3 {
   margin-bottom: 4rem;
 }
 #intro {
+  display: grid;
   margin-bottom: 4rem;
+  justify-items: center;
+}
+#intro p {
+  max-width: 80ch;
 }
 #content-group-1 img, #content-group-2 img {
   width: 50%;
@@ -142,20 +146,26 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   width: 50%;
   padding: 3rem;
+}
+.content-text p {
+  max-width: 40ch;
 }
 
 /* ---- CONTACT PAGE ---- */
 #first-column, #second-column {
   width: 50%;
-  text-align: left;
   padding: 1rem;
 }
 #first-column img {
   width: 100%;
   height: auto;
   padding-top: 2rem;
+}
+#first-column p {
+  max-width: 60ch;
 }
 
 /* ---- CONTACT FORM ---- */
@@ -224,4 +234,5 @@ footer {
   background-color: var(--green);
   color: var(--white);
   line-height: 1.5rem;
+  text-align: center;
 }
